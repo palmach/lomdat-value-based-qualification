@@ -6,7 +6,7 @@ function ExerBack() {
     <div className="exer-back">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 100 1242 2008"
+       viewBox="0 100 1242 2008"
         className="back"
       >
         <defs>
