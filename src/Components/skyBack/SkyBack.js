@@ -4,12 +4,12 @@ import "./SkyBack.css";
 
 function SkyBack() {
   return (
-    <div className="opening-back">
+    // <div className="opening-back">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         //xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 100 1242 2008"
-        className="back"
+        className="back sky"
       >
         <defs>
           <clipPath id="opening-clip-path">
@@ -1032,7 +1032,7 @@ function SkyBack() {
           </g>
         </g>
       </svg>
-    </div>
+    // </div>
   );
 }
 

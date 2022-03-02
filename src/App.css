@@ -12,6 +12,8 @@
   width: 100%;
   height: 100vh;
   direction: rtl;
+  background-image: linear-gradient(to top, #bdd4d1, #b6d0ce, #b0cccb, #a9c8c8, #a3c4c5, #94b9be, #85afb7, #76a4b0, #5b91a4, #417d98, #266a8c, #005780);
+  background-size: 100% 100%;
 }
 
 .back {
@@ -19,6 +21,10 @@
   width: 100%;
   position: absolute;
   left: 0vw;
+  /* flex: 1;
+   	resizeMode: 'stretch';
+  	width: Theme.getScreenWidth;
+	height: Theme.getScreenHeight+50; */
 }
 
 .headline{

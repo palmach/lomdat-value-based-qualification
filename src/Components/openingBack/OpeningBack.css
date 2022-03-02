@@ -8,6 +8,12 @@
 .isolation {
   isolation: isolate;
 } */
+
+.bottom-back{
+  position: absolute;
+  left: 0vw;
+  bottom: 0vh;
+}
 .opening-back-cont {
   clip-path: url(#opening-clip-path);
 }

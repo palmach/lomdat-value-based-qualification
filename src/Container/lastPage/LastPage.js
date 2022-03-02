@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./LastPage.css";
 import OpeningBack from "../../Components/openingBack/OpeningBack";
 import SkyBack from "../../Components/skyBack/SkyBack";
@@ -15,11 +15,13 @@ function LastPage(props) {
   const toAbout = () => {
     navigate("/about");
   };
+  useEffect(()=>{ props.setPageNum(3);},[])
+
 
   return (
     <div className="last-page">
-      <SkyBack />
-      <OpeningBack />
+      {/* <SkyBack />
+      <OpeningBack /> */}
 
       <div className="last-content">
         <Logos />

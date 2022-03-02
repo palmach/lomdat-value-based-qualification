@@ -7,8 +7,8 @@ import Logos from "../../Components/logos/Logos";
 function AboutPage(props) {
   return (
     <div className="last-page">
-      <SkyBack />
-      <OpeningBack />
+      {/* <SkyBack />
+      <OpeningBack /> */}
       <div className="about-content">
         <Logos />
         <h1 className="headline about-headline">אודות</h1>

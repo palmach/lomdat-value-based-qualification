@@ -3,11 +3,11 @@ import "./ExerBack.css";
 
 function ExerBack() {
   return (
-    <div className="exer-back">
+    // <div className="exer-back">
       <svg
         xmlns="http://www.w3.org/2000/svg"
        viewBox="0 100 1242 2008"
-        className="back"
+        className="back bottom-back"
       >
         <defs>
           <clipPath id="clip-path">
@@ -709,7 +709,7 @@ function ExerBack() {
           </g>
         </g>
       </svg>
-    </div>
+    // </div>
   );
 }
 

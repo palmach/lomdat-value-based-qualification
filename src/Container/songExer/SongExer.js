@@ -65,8 +65,8 @@ function SongExer(props) {
 
   return (
     <div className="song-exer-cont">
-      <SkyBack />
-      <ExerBack />
+      {/* <SkyBack />
+      <ExerBack /> */}
       {isExpain ? (
         <MishExpain pageNum={props.pageNum} btnClick={btnClick} />
       ) : isBefore ? (

@@ -108,8 +108,8 @@ function MapExer(props) {
 
   return (
     <div className="map-exer ">
-      <SkyBack />
-      <ExerBack />
+      {/* <SkyBack />
+      <ExerBack /> */}
       {isExpain ? (
         <MishExpain pageNum={props.pageNum} btnClick={btnClick} />
       ) : (

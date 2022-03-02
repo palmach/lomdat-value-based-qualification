@@ -1,6 +1,10 @@
 .fist-page {
     height: 100%;
   }
+
+  .sky{
+    display: none;
+  }
   
   .empty{
     fill: none;

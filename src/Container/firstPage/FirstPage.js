@@ -23,8 +23,8 @@ function FirstPage(props) {
 
   return (
     <div className="first-page">
-      <SkyBack />
-      <OpeningBack />
+      {/* <SkyBack />
+      <OpeningBack /> */}
       {isOpenin ? (
         <MishExpain pageNum={props.pageNum} btnClick={btnClick}/>
       ) : (
