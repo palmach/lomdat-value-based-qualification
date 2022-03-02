@@ -8,7 +8,7 @@ function SkyBack() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         //xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 1242 2208"
+        viewBox="0 100 1242 2008"
         className="back"
       >
         <defs>
