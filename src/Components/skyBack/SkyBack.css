@@ -1,0 +1,163 @@
+.fist-page {
+    height: 100%;
+  }
+  
+  .empty{
+    fill: none;
+  }
+  .isolation {
+    isolation: isolate;
+  }
+  .opening-back-cont {
+    clip-path: url(#opening-clip-path);
+  }
+  .opening-background {
+    fill: url(#sky-linear-gradient);
+  }
+  .sun-opacity,
+  .circle2 {
+    opacity: 0.17;
+  }
+  .ray1 {
+    mask: url(#opening-mask);
+  }
+  .ray,
+  .circle4,
+  .circle3,
+  .circle2,
+  .circle1 {
+    mix-blend-mode: screen;
+  }
+  .ray2 {
+    mask: url(#opening-mask-2);
+  }
+  .ray3 {
+    mask: url(#opening-mask-3);
+  }
+  .ray4 {
+    mask: url(#opening-mask-4);
+  }
+  .ray5 {
+    mask: url(#opening-mask-5);
+  }
+  .ray6 {
+    mask: url(#opening-mask-6);
+  }
+  .ray7 {
+    mask: url(#opening-mask-7);
+  }
+  .ray8 {
+    mask: url(#opening-mask-8);
+  }
+  .ray9 {
+    mask: url(#opening-mask-9);
+  }
+  .ray10 {
+    mask: url(#opening-mask-10);
+  }
+  .ray11 {
+    mask: url(#opening-mask-11);
+  }
+  .ray12 {
+    mask: url(#opening-mask-12);
+  }
+  .ray13 {
+    mask: url(#opening-mask-13);
+  }
+  .ray14 {
+    mask: url(#opening-mask-14);
+  }
+  .ray15 {
+    mask: url(#opening-mask-15);
+  }
+  .ray16 {
+    mask: url(#opening-mask-16);
+  }
+  .ray17 {
+    mask: url(#opening-mask-17);
+  }
+  .ray18 {
+    mask: url(#opening-mask-18);
+  }
+  .ray19 {
+    mask: url(#opening-mask-19);
+  }
+  .ray20 {
+    mask: url(#opening-mask-20);
+  }
+  .circle4 {
+    fill: url(#radial-gradient);
+    opacity: 0.34;
+  }
+  .circle3,
+  .circle1 {
+    opacity: 0.68;
+  }
+  .circle3,
+  .circle2 {
+    fill: url(#radial-gradient-2);
+  }
+  .circle1 {
+    fill: url(#radial-gradient-4);
+  }
+  .ray21 {
+    filter: url(#luminosity-noclip-20);
+  }
+  .ray22 {
+    filter: url(#luminosity-noclip-19);
+  }
+  .ray23 {
+    filter: url(#luminosity-noclip-18);
+  }
+  .ray24 {
+    filter: url(#luminosity-noclip-17);
+  }
+  .ray25 {
+    filter: url(#luminosity-noclip-16);
+  }
+  .ray26 {
+    filter: url(#luminosity-noclip-15);
+  }
+  .ray27 {
+    filter: url(#luminosity-noclip-14);
+  }
+  .ray28 {
+    filter: url(#luminosity-noclip-13);
+  }
+  .ray29 {
+    filter: url(#luminosity-noclip-12);
+  }
+  .ray30 {
+    filter: url(#luminosity-noclip-11);
+  }
+  .ray31 {
+    filter: url(#luminosity-noclip-10);
+  }
+  .ray32 {
+    filter: url(#luminosity-noclip-9);
+  }
+  .ray33 {
+    filter: url(#luminosity-noclip-8);
+  }
+  .ray34 {
+    filter: url(#luminosity-noclip-7);
+  }
+  .ray35 {
+    filter: url(#luminosity-noclip-6);
+  }
+  .ray36 {
+    filter: url(#luminosity-noclip-5);
+  }
+  .ray37 {
+    filter: url(#luminosity-noclip-4);
+  }
+  .ray38 {
+    filter: url(#luminosity-noclip-3);
+  }
+  .ray39 {
+    filter: url(#luminosity-noclip-2);
+  }
+  .ray40 {
+    filter: url(#luminosity-noclip);
+  }
+  

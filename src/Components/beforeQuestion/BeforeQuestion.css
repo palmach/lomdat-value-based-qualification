@@ -1,0 +1,28 @@
+.input-question{
+    width: 44%;
+}
+
+.input-text{
+    font-size: 5vh;
+    color: #2c687a;
+    /* color: #6a6a6a; */
+    margin: 1vh;
+}
+
+.question{
+    width: 60%;
+    height: 5vh;
+    background: transparent;
+    border: #ffffff00;
+    border-bottom-color: black;
+    border-bottom-width: 1vw;
+    border-bottom-style: solid;
+    color: #2c687a;
+    /* color: black; */
+    outline: none;
+}  
+
+.answer{
+    opacity: 0;
+    color: #56821D;
+}

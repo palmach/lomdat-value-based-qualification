@@ -1,0 +1,19 @@
+.tabs{
+    font-family: textFont;
+    font-size: 4vh;
+    width: 20vw;
+    margin: 0.3vw;
+    border-bottom-width: 0.7vh;
+    border-bottom-color: black;
+    outline: none;
+    border-color: #000000bd;
+    border-radius: 0.2em;
+    padding-top: 0.7vh;
+    color: #2c687a;
+
+}
+
+.text-tab{
+    display: inline;
+    padding-right: 0.5vw;
+}

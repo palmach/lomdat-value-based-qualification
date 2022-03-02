@@ -1,0 +1,45 @@
+/* 
+.cls-1 {
+  fill: none;
+}
+.isolation {
+  isolation: isolate;
+} */
+
+
+
+.exer-back{
+   width: 100%;
+   height: 100vh;
+}
+
+.bird {
+  fill: #2e696e;
+}
+.exer-mountain1 {
+  fill: url(#linear-gradient-6);
+}
+.exer-mountain2 {
+  fill: url(#linear-gradient-7);
+}
+.exer-mountain3 {
+  fill: url(#linear-gradient-8);
+}
+.mountain-opacity {
+  opacity: 0.65;
+}
+.exer-mountain4 {
+  fill: url(#linear-gradient-9);
+}
+.exer-mountain5 {
+  fill: url(#linear-gradient-10);
+}
+/* .cls-37 {
+  fill: url(#linear-gradient-11);
+} */
+.exer-mountain6 {
+  fill: url(#linear-gradient-12);
+}
+.exer-mountain7 {
+  fill: url(#linear-gradient-13);
+}

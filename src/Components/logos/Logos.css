@@ -1,0 +1,31 @@
+.logo {
+  height: inherit;
+  /* height: 8vh; */
+  background-size: 100% 100%;
+  width: 19vw;
+  /* width: inherit; */
+}
+
+.logos-cont {
+  width: 63%;
+  height: 9vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0vh;
+  left: 0vh;
+  padding: 2vh;
+}
+
+.logo1 {
+  background-image: url(../../media/symbol1.png);
+  width: 14vw;
+}
+
+.logo2 {
+  background-image: url(../../media/symbol2.png);
+}
+.logo3 {
+  background-image: url(../../media/matach.png);
+}
