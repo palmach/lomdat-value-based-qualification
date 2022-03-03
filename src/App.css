@@ -13,8 +13,7 @@
   height: 100vh;
   direction: rtl;
   /* background-image: linear-gradient(to top, #2e696e, #a9c8c8, #a3c4c5, #94b9be, #85afb7, #76a4b0, #5b91a4, #417d98, #266a8c, #005780); */
-  background: linear-gradient(0deg, rgba(0,87,128,1) 6%, rgba(189,212,209,1) 7%, rgba(155,190,194,1) 35%, rgba(0,87,128,1) 100%);
-  background-size: 100% 100%;
+  background: linear-gradient(0deg, rgba(46,105,110,1) 14%, rgba(189,212,209,1) 16%, rgba(155,190,194,1) 35%, rgba(0,87,128,1) 100%);  background-size: 100% 100%;
 }
 
 .back {
