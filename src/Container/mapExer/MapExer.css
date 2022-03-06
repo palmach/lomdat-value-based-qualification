@@ -13,14 +13,26 @@
 .map-cont {
   width: 100%;
   height: 95vh;
-  position: absolute;
+  padding-top: 5%;
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
   text-align: center;
-  top: 5vh;
+  /* top: 5vh; */
+}
+.map-drop-cont{
+  width: 100%;
+  height: 80%;
+  position: relative;
+    display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .map {
@@ -49,7 +61,7 @@
 
 .drop-cont {
   width: 90%;
-  height: 81%;
+  height: 100%;
   position: absolute;
   top: 0vh;
 }
@@ -123,7 +135,7 @@
 
 .drag-city {
   color: #c1272d;
-  font-size: 3.3vh;
+  font-size: 2.7vh;
   border: solid 0.5vh #c1272d;
 }
 

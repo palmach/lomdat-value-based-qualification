@@ -56,7 +56,6 @@ function MapExer(props) {
   };
 
   const handleHit = (e) => {
-    console.log(data);
     e.stopPropagation();
     if (currPart === 0) {
       let item = [...data];
@@ -68,15 +67,11 @@ function MapExer(props) {
         backgroundColor: "#ffff",
       });
     } else {
-      console.log("here");
-      console.log("here");
       let item = [...data];
       item[e.dragData.index.index] = 1;
       setCityCounter((prev) => prev + 1);
       setData(item);
     }
-
-    console.log(data);
     e.containerElem.style.display = "none";
   };
 
@@ -85,7 +80,6 @@ function MapExer(props) {
       (currPart === 0 && countryCounter === 6) ||
       (currPart === 1 && cityCounter === 15)
     ) {
-      console.log(cityCounter);
       setIsNext(false);
     }
   }, [data]);
@@ -96,6 +90,7 @@ function MapExer(props) {
         <MishExpain pageNum={props.pageNum} btnClick={btnClick} />
       ) : (
         <div className="map-cont">
+          <div className="map-drop-cont">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 682.27 1542.83"
@@ -190,6 +185,7 @@ function MapExer(props) {
                 );
               })}
           </div>
+          </div>
 
           <div className="drag-cont">
             {isNext ? (
@@ -199,8 +195,6 @@ function MapExer(props) {
                     targetKey={`${part[currPart]}${index}`}
                     key={index}
                     dragData={{ name: { name }, index: { index } }}
-                    // onDragEnd={cheackHit}
-                    // dropData={`city${index}`}
                   >
                     <div
                       className={`drag normal-text drag-${part[currPart]} drag-${part[currPart]}${index} `}
