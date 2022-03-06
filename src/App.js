@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-// import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FirstPage from "./Container/firstPage/FirstPage";
 import LastPage from "./Container/lastPage/LastPage";
@@ -19,7 +18,6 @@ function App() {
     <div className="App">
       <SkyBack />
       {pageNum === 0 || pageNum === 3 ? <OpeningBack /> : <ExerBack />}
-      <div className="block"></div>
       <BrowserRouter>
         <Routes>
           <Route

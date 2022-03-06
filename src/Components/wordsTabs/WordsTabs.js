@@ -15,22 +15,25 @@ function WordsTabs(props) {
   useEffect(() => {
     if (props.isCheacked) {
       if (
-        inputValue === props.endValue ||
-        inputValue === props.endValue + " "
+        inputValue.trim() === props.endValue
       ) {
         gsap.to(colorRef.current, {
           borderBottomColor: "#56821D",
           duration: 0.25,
           backgroundColor: "whitesmoke",
         });
-        setIsCorrect(true);
+        // setIsCorrect(true);
       } else {
         gsap.to(colorRef.current, {
           borderBottomColor: "#bb3c02",
-          duration: 0.25,
+          backgroundColor: "whitesmoke",
+          duration: 0.75,
+          color: "#bb3c02"
         });
-        props.setIsCheacked(false);
+        setInputValue(props.endValue);
+        // props.setIsCheacked(false);
       }
+      setIsCorrect(true);
     }
   }, [props.isCheacked]);
 

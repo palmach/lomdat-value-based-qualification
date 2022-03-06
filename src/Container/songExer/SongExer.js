@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./SongExer.css";
-import ExerBack from "../../Components/exerBack/ExerBack";
-import SkyBack from "../../Components/skyBack/SkyBack";
 import WordsTabs from "../../Components/wordsTabs/WordsTabs";
 import MishExpain from "../../Components/mishExpain/MishExpain";
 import BeforeQuestion from "../../Components/beforeQuestion/BeforeQuestion";
@@ -45,7 +43,6 @@ function SongExer(props) {
     if (isCheacked === false) {
       setIsCheacked(true);
     }
-    console.log("cheach");
   };
 
   const moveTab = (event, index) => {
@@ -65,8 +62,6 @@ function SongExer(props) {
 
   return (
     <div className="song-exer-cont">
-      {/* <SkyBack />
-      <ExerBack /> */}
       {isExpain ? (
         <MishExpain pageNum={props.pageNum} btnClick={btnClick} />
       ) : isBefore ? (
@@ -96,13 +91,9 @@ function SongExer(props) {
         <div className="words-cont">
           {Text[props.pageNum]["song"].map((vers, lineIndex) => {
             return (
-              <div className="line-cont">
+              <div className="line-cont" key={lineIndex}>
                 {Text[props.pageNum]["song"][lineIndex].map(
                   (word, wordIndex) => {
-                    console.log(lineIndex * 4 + wordIndex);
-                    console.log(
-                      "lineIndex " + lineIndex + " wordIndex " + wordIndex
-                    );
                     return (
                       <WordsTabs
                         key={lineIndex * 4 + wordIndex}

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./FirstPage.css";
-import OpeningBack from "../../Components/openingBack/OpeningBack";
-import SkyBack from "../../Components/skyBack/SkyBack";
 import Logos from "../../Components/logos/Logos";
 import MishExpain from "../../Components/mishExpain/MishExpain";
 import { useNavigate } from "react-router-dom";
@@ -23,8 +21,6 @@ function FirstPage(props) {
 
   return (
     <div className="first-page">
-      {/* <SkyBack />
-      <OpeningBack /> */}
       {isOpenin ? (
         <MishExpain pageNum={props.pageNum} btnClick={btnClick}/>
       ) : (

@@ -1,7 +1,5 @@
 import React, {useEffect} from "react";
 import "./LastPage.css";
-import OpeningBack from "../../Components/openingBack/OpeningBack";
-import SkyBack from "../../Components/skyBack/SkyBack";
 import Logos from "../../Components/logos/Logos";
 import { useNavigate } from "react-router-dom";
 
@@ -20,9 +18,6 @@ function LastPage(props) {
 
   return (
     <div className="last-page">
-      {/* <SkyBack />
-      <OpeningBack /> */}
-
       <div className="last-content">
         <Logos />
         <h1 className="headline last-headline">כל הכבוד סימתם את הלומדה!</h1>

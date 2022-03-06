@@ -1,6 +1,4 @@
-// MishExpain
-
-import React, {useState} from "react";
+import React from "react";
 import "./MishExpain.css";
 import Text from "../../Text.json";
 import { Markup } from "interweave";

@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./MapExer.css";
 import Text from "../../Text.json";
-import ExerBack from "../../Components/exerBack/ExerBack";
-import SkyBack from "../../Components/skyBack/SkyBack";
 import { DragDropContainer, DropTarget } from "react-drag-drop-container";
 import MishExpain from "../../Components/mishExpain/MishExpain";
 import CityPlacment from "../../Components/cityPlacment/CityPlacment";
 import gsap from "gsap";
 import { useNavigate } from "react-router-dom";
-
-
-// import Questionsback from "../../Components/openingBack/OpeningBack";
 
 function MapExer(props) {
   const [isExpain, setIsExpain] = useState(true);
@@ -19,18 +14,14 @@ function MapExer(props) {
 
   const [data, setData] = useState([]);
 
-  const [countryData, setCountryData] = useState([0, 0, 0, 0, 0, 0]);
+  const countryData = [0, 0, 0, 0, 0, 0];
   const [countryCounter, setCountryCounter] = useState(0);
 
-  const [cityData, setCityData] = useState([
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-  ]);
+  const cityData = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   const [cityCounter, setCityCounter] = useState(0);
 
   const [isNext, setIsNext] = useState(true);
   const navigate = useNavigate();
-
-  // const [isHit, setIsHit] = useState(false);
 
   const btnClick = () => {
     setIsExpain(false);
@@ -46,13 +37,12 @@ function MapExer(props) {
   }, []);
 
   const nextBtn = () => {
-    if (currPart===1) {
+    if (currPart === 1) {
       navigate("/song");
-    } else{
+    } else {
       setCurrPart(1);
       setIsNext(true);
       setData(cityData);
-
     }
 
     // gsap.to(`.drop-country`, {
@@ -66,14 +56,9 @@ function MapExer(props) {
   };
 
   const handleHit = (e) => {
-    // setIsHit(true);
     console.log(data);
     e.stopPropagation();
     if (currPart === 0) {
-      // let item = [...countryData];
-      // item[e.dragData.index.index] = 1;
-      // setCountryCounter((prev) => prev + 1);
-      // setCountryData(item);
       let item = [...data];
       item[e.dragData.index.index] = 1;
       setCountryCounter((prev) => prev + 1);
@@ -88,7 +73,6 @@ function MapExer(props) {
       let item = [...data];
       item[e.dragData.index.index] = 1;
       setCityCounter((prev) => prev + 1);
-      // setCityData(item);
       setData(item);
     }
 
@@ -108,8 +92,6 @@ function MapExer(props) {
 
   return (
     <div className="map-exer ">
-      {/* <SkyBack />
-      <ExerBack /> */}
       {isExpain ? (
         <MishExpain pageNum={props.pageNum} btnClick={btnClick} />
       ) : (

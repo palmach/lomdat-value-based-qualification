@@ -1,14 +1,10 @@
 import React from "react";
 import "./AboutPage.css";
-import OpeningBack from "../../Components/openingBack/OpeningBack";
-import SkyBack from "../../Components/skyBack/SkyBack";
 import Logos from "../../Components/logos/Logos";
 
-function AboutPage(props) {
+function AboutPage() {
   return (
     <div className="last-page">
-      {/* <SkyBack />
-      <OpeningBack /> */}
       <div className="about-content">
         <Logos />
         <h1 className="headline about-headline">אודות</h1>
