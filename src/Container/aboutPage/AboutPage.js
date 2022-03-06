@@ -5,8 +5,8 @@ import Logos from "../../Components/logos/Logos";
 function AboutPage() {
   return (
     <div className="last-page">
-      <div className="about-content">
         <Logos />
+      <div className="about-content">
         <h1 className="headline about-headline">אודות</h1>
         <p className="about-text normal-text">
           <span className="about-titles">ראש מדור מט"ח: </span>רס"ן מור דהן

@@ -18,8 +18,8 @@ function LastPage(props) {
 
   return (
     <div className="last-page">
-      <div className="last-content">
         <Logos />
+      <div className="last-content">
         <h1 className="headline last-headline">כל הכבוד סימתם את הלומדה!</h1>
         <p className="normal-text last-text">
           אם אתם מרגישים לא מוכנים עדיין אתם מוזמנים לחזור על הלומדה כמה שתרצו.

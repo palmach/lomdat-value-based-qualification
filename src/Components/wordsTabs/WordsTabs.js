@@ -50,7 +50,7 @@ function WordsTabs(props) {
       className="fill-tab tabs"
       value={inputValue}
       onChange={handelChange}
-      disabled={isCorrect}
+      readOnly={isCorrect}
       autoComplete="off"
       onKeyPress={cheackEnter}
     />
