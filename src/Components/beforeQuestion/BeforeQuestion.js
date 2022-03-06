@@ -17,7 +17,7 @@ function BeforeQuestion(props) {
         className="question normal-text input-text"
         value={inputValue}
         onChange={handelChange}
-        disabled={props.isCheacked}
+        readOnly={props.isCheacked}
         autoComplete="off"
       />
       <p className=" normal-text answer input-text">
