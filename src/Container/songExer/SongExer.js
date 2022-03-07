@@ -12,12 +12,12 @@ function SongExer(props) {
   const [isExpain, setIsExpain] = useState(true);
   const [isBefore, setIsBefore] = useState(true);
   const navigate = useNavigate();
+  const panc = ["", ",", "", "-", ",", ",", "", "."];
 
   const nextPage = () => {
     navigate("/last");
   };
 
-  const panc = ["", ",", "", "-", ",", ",", "", "."];
   useEffect(() => {
     props.setPageNum(2);
   }, []);
@@ -43,21 +43,6 @@ function SongExer(props) {
     if (isCheacked === false) {
       setIsCheacked(true);
     }
-  };
-
-  const moveTab = (event, index) => {
-      if(event.key==="Enter"){
-          let nextfiled;
-        //   if (index + 1 !== 3) {
-            nextfiled = document.querySelector(index);
-        //   } else {
-        //     nextfiled = document.querySelector(index + 2);
-        //   }
-          if (nextfiled !== null) {
-            nextfiled.focus();
-          }
-
-      }
   };
 
   return (
@@ -108,7 +93,6 @@ function SongExer(props) {
                         nextfiled={document.querySelector(
                             `input[name=filed-${wordIndex +1 !== null? lineIndex +"-"+ wordIndex+1 :lineIndex+1 +"-0"}]`
                           )}
-                          moveTab={moveTab}
                       />
                     );
                   }

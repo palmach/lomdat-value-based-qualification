@@ -22,7 +22,6 @@ function WordsTabs(props) {
           duration: 0.25,
           backgroundColor: "whitesmoke",
         });
-        // setIsCorrect(true);
       } else {
         gsap.to(colorRef.current, {
           borderBottomColor: "#bb3c02",
@@ -31,17 +30,11 @@ function WordsTabs(props) {
           color: "#bb3c02"
         });
         setInputValue(props.endValue);
-        // props.setIsCheacked(false);
       }
       setIsCorrect(true);
     }
   }, [props.isCheacked]);
 
-  const cheackEnter = (event) => {
-    if(event.key==="Enter"){
-      props.moveTab(event, props.nextfiled);
-    }
-};
 
   return (
     <input
@@ -52,7 +45,6 @@ function WordsTabs(props) {
       onChange={handelChange}
       readOnly={isCorrect}
       autoComplete="off"
-      onKeyPress={cheackEnter}
     />
   );
 }

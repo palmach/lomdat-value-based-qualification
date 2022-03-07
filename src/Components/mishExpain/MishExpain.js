@@ -14,10 +14,7 @@ function MishExpain(props) {
         content={Text[props.pageNum]["text"]}
       />
 
-      <div
-        className="btn normal-text"
-        onClick={props.btnClick}
-      >
+      <div className="btn normal-text" onClick={props.btnClick}>
         {Text[props.pageNum]["btn"]}
       </div>
     </div>
