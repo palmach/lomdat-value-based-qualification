@@ -36,6 +36,9 @@ function SongExer(props) {
     gsap.to(".answer", {
       duration: 0.25,
       opacity: 1,
+      if (condition) {
+        
+      }
     });
   };
 
@@ -50,6 +53,7 @@ function SongExer(props) {
       {isExpain ? (
         <MishExpain pageNum={props.pageNum} btnClick={btnClick} />
       ) : isBefore ? (
+        //כאשר מדובר ב ״רגע לפני״
         <div className="before-questions">
           <h1 className="headline explain-headline">
             {Text[props.pageNum]["q-headlin"]}

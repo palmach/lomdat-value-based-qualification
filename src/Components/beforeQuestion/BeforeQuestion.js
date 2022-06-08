@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./BeforeQuestion.css";
 import Text from "../../Text.json";
 
@@ -8,6 +8,13 @@ function BeforeQuestion(props) {
   const handelChange = (event) => {
     setInputValue(event.target.value);
   };
+
+  useEffect(() => {
+    if (inputValue) {
+      
+    }
+  }, [props.isCheacked]);
+
 
   return (
     <div className="question-div" key={props.index}>
