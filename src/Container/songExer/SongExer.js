@@ -36,9 +36,6 @@ function SongExer(props) {
     gsap.to(".answer", {
       duration: 0.25,
       opacity: 1,
-      if (condition) {
-        
-      }
     });
   };
 

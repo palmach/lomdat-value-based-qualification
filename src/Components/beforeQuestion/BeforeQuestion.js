@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./BeforeQuestion.css";
 import Text from "../../Text.json";
+import gsap from "gsap";
+
 
 function BeforeQuestion(props) {
   const [inputValue, setInputValue] = useState("");
@@ -10,8 +12,14 @@ function BeforeQuestion(props) {
   };
 
   useEffect(() => {
-    if (inputValue) {
-      
+    if (inputValue!==Text[props.pageNum]["a"][props.index]) {
+      gsap.to(`.ans${props.index}`, {
+        color:"#c1272d"
+      });
+    } else{
+      gsap.to(`.ans${props.index}`, {
+        color:"#56821D"
+      });
     }
   }, [props.isCheacked]);
 
@@ -27,7 +35,7 @@ function BeforeQuestion(props) {
         readOnly={props.isCheacked}
         autoComplete="off"
       />
-      <p className=" normal-text answer input-text">
+      <p className= {`normal-text answer input-text ans${props.index}`}>
         {Text[props.pageNum]["a"][props.index]}
       </p>
     </div>
