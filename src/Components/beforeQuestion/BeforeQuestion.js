@@ -12,12 +12,15 @@ function BeforeQuestion(props) {
   };
 
   useEffect(() => {
+    //אם ענו על השאלות של רגע לפני לא נכון יופיע הטקסט באדום
     if (inputValue!==Text[props.pageNum]["a"][props.index]) {
       gsap.to(`.ans${props.index}`, {
+        //אדום
         color:"#c1272d"
       });
     } else{
       gsap.to(`.ans${props.index}`, {
+        //ירוק
         color:"#56821D"
       });
     }
